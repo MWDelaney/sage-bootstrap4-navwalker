@@ -1,0 +1,19 @@
+{
+  "name": "mwdelaney/sage-bootstrap4-navwalker",
+  "description": "Bootstrap 4 Navbar component navwalker for Sage 9 based themes",
+  "keywords": ["wordpress", "bootstrap 4", "navwalker", "navbar"],
+  "homepage": "https://github.com/MWDelaney/sage-bootstrap4-navwalker",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael W. Delaney",
+      "email": "michael@michaeldelaney.me"
+		}
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  },
+	"autoload": {
+    "files": ["bootstrap4-navwalker.php"]
+  }
+}
