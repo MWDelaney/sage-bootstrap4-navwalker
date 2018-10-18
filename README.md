@@ -20,7 +20,7 @@ public function primarymenu() {
   $args = array(
     'theme_location'    => 'primary_navigation',
     ...
-    'walker'            => new wp_bootstrap4_navwalker()
+    'walker'            => new \App\wp_bootstrap4_navwalker()
   );
   return $args;
 }
