@@ -19,8 +19,9 @@ In your Controller, probably `app.php`
 public function primarymenu() {
   $args = array(
     'theme_location'    => 'primary_navigation',
+    'menu_class' => 'navbar-nav',
+    'walker'            => new \App\wp_bootstrap4_navwalker(),
     ...
-    'walker'            => new \App\wp_bootstrap4_navwalker()
   );
   return $args;
 }
@@ -38,6 +39,6 @@ If you're not setting up your template data with Controller, you'll need to full
 In your Blade file, probably `header.blade.php`
 ```php
 @if (has_nav_menu('primary_navigation'))
-  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new \App\wp_bootstrap4_navwalker()]) !!}
+  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navbar-nav', 'walker' => new \App\wp_bootstrap4_navwalker()]) !!}
 @endif
 ```
