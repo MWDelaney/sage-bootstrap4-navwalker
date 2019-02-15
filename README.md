@@ -19,7 +19,7 @@ In your Controller, probably `app.php`
 public function primarymenu() {
   $args = array(
     'theme_location'    => 'primary_navigation',
-    'menu_class' => 'navbar-nav',
+    'menu_class'        => 'navbar-nav',
     'walker'            => new \App\wp_bootstrap4_navwalker(),
     ...
   );
