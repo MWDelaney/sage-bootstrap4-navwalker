@@ -200,6 +200,7 @@ if (class_exists('\Walker_Nav_Menu')) {
                     // For items in dropdowns use .dropdown-item instead of .nav-link.
                     if ($depth > 0) {
                         $atts['class'] = 'dropdown-item';
+                        $atts['role'] = 'menuitem';
                     } else {
                         $atts['class'] = 'nav-link';
                     }
