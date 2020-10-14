@@ -190,6 +190,7 @@ if (class_exists('\Walker_Nav_Menu')) {
                 // If the item has children, add atts to the <a>.
                 if (isset($args->has_children) && $args->has_children && 0 === $depth && $args->depth > 1) {
                     $atts['href']          = '#';
+                    $atts['data-href']     = $item->url;
                     $atts['data-toggle']   = 'dropdown';
                     $atts['aria-haspopup'] = 'true';
                     $atts['aria-expanded'] = 'false';
