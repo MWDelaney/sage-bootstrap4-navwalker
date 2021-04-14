@@ -175,16 +175,7 @@ if (class_exists('\Walker_Nav_Menu')) {
                 // Initialize array for holding the $atts for the link item.
                 $atts = array();
 
-                /*
-                * Set title from item to the $atts array - if title is empty then
-                * default to item title.
-                */
-                if (empty($item->attr_title)) {
-                    $atts['title'] = ! empty($item->title) ? strip_tags($item->title) : '';
-                } else {
-                    $atts['title'] = $item->attr_title;
-                }
-
+                $atts['title'] = ! empty($item->attr_title) ? $item->attr_title : '';
                 $atts['target'] = ! empty($item->target) ? $item->target : '';
                 $atts['rel']    = ! empty($item->xfn) ? $item->xfn : '';
                 // If the item has children, add atts to the <a>.
